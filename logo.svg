@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1919.8103"
+   height="136.53691"
+   viewBox="0 0 507.9498 36.125391"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="logo.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient8"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#00f716;stop-opacity:0.38664323;"
+         offset="0"
+         id="stop9" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.33333334;"
+         offset="0.25422463"
+         id="stop12" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.30980393;"
+         offset="0.80352604"
+         id="stop11" />
+      <stop
+         style="stop-color:#1cff1c;stop-opacity:0.37082601;"
+         offset="1"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8"
+       id="linearGradient10"
+       x1="214.38522"
+       y1="48.711594"
+       x2="363.93848"
+       y2="39.153908"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-40.001845,-23.928044)" />
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.05746289,-0.01358942)">
+    <rect
+       style="fill:#2c2c2c;fill-opacity:1;stroke:none;stroke-width:0.373256;stroke-linecap:round;stroke-linejoin:round"
+       id="rect1"
+       width="507.9498"
+       height="36.125389"
+       x="0.057462886"
+       y="0.013589422" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.2806px;font-family:GothicE;-inkscape-font-specification:'GothicE, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient10);stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:markers stroke fill"
+       x="173.52399"
+       y="24.110699"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan11"
+         style="stroke:url(#linearGradient10);stroke-width:0.8;stroke-dasharray:none"
+         x="173.52399"
+         y="24.110699">Boutique Elegance</tspan></text>
+    <path
+       sodipodi:type="star"
+       style="fill:#ffffff;fill-opacity:1;stroke:#45fd3a;stroke-width:0.9;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.268217;paint-order:markers stroke fill"
+       id="path11"
+       inkscape:flatsided="false"
+       sodipodi:sides="5"
+       sodipodi:cx="272.52313"
+       sodipodi:cy="34.614311"
+       sodipodi:r1="4.2366934"
+       sodipodi:r2="2.1183467"
+       sodipodi:arg1="0.9151007"
+       sodipodi:arg2="1.5434192"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 275.10629,37.972416 -2.52517,-1.240552 -2.4535,1.376887 0.39952,-2.784931 -2.06767,-1.907931 2.77208,-0.48063 1.17561,-2.556054 1.31373,2.487886 2.79423,0.328203 -1.96016,2.018228 z"
+       inkscape:transform-center-x="0.035841331"
+       inkscape:transform-center-y="-0.37033319"
+       transform="translate(-21.79884,-14.709252)" />
+  </g>
+</svg>

@@ -1,0 +1,292 @@
+
+        
+        body{
+            background-color: rgb(104, 104, 104);
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            background-color: rgb(44, 44, 44);
+            text-align: center;
+        }
+        
+        #b-menu{
+            background-color: rgb(44, 44, 44);
+            border: none;
+            margin-bottom: 20px;
+            padding-top: 7px;
+            cursor: pointer;
+            
+        }
+
+        #menu {
+            display: flex;
+            justify-content: space-evenly; 
+            align-items: center; 
+            gap: 20px; 
+            background-color: rgb(202, 202, 202);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+}
+        #button-login{
+            color:white;
+            background-color: rgba(0, 107, 0, 0.74);
+            border-radius: 5px;
+            border: none;
+            padding-left: 23px;
+            padding-right: 23px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            cursor: pointer;
+        }
+
+        #button-login:hover{
+            box-shadow: 0px 0px 20px rgb(23, 201, 17);
+            transition: 1s;
+        }
+
+        #search-button{
+            background-color: rgb(202, 202, 202);
+            border: none;
+            cursor: pointer;
+        }
+
+        #search{
+            border-radius: 6px;
+            border: none;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .menu-text:hover{
+            cursor: pointer;
+            color: white;
+            transition: 1s;
+            background-color: rgba(0, 107, 0, 0.74);
+        }
+
+        .menu-text{
+            background-color: rgba(90, 90, 90, 0.301);
+            padding: 8px;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border: none;
+        }
+        
+        #search-form{
+            display: flex;
+        }
+
+        #login-form{
+            background-color: white;
+            border-radius: 22px;
+            margin: auto;
+            margin-top: 20px;
+            padding:20px;
+            width: 400px;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px; 
+}
+
+        .login-input {
+            border-radius: 20px;
+            border: none;
+            background-color: rgb(200, 200, 200);
+            padding: 14px;
+            margin-left: 10px; 
+            flex-grow: 1;
+            text-align: center;
+}
+
+        .login-text {
+            margin: 0;
+            white-space: nowrap; 
+}
+
+
+        #login-submit-button{
+        border: none;
+        border-radius: 6px;
+        padding: 8px;
+        background-color: rgba(0, 107, 0, 0.74);
+        color: white;
+        }
+
+        .login-text{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        #user-group{
+            display: flex;
+            gap: 4px;
+            align-items: center; 
+        }
+
+        #user-text{
+            background-color: rgba(0, 107, 0, 0.74);
+            border-radius: 6px;
+            padding: 10px;
+            color: white;
+        }
+
+        #aside-tab{
+            background-color: rgb(202, 202, 202);
+            width: auto;
+            padding-bottom: 1080px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .aside-text{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+            padding: 10px;
+            white-space: pre-wrap;
+            font-weight: bold;
+        }
+
+        #aside-div{
+            display: flex;
+            justify-content: left;
+
+        }
+        #aside-button{
+            background-color: rgb(168, 25, 25);
+            padding: 8px;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border: none;
+            color: white;
+        }
+
+        #aside-button:hover{
+            background-color: rgb(57, 0, 0);
+            padding: 8px;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        #AI{
+            background-color: rgb(26, 26, 26);
+            padding: 20PX;
+            width: 250px;
+            border-radius: 20px;
+        }
+
+       #div-geral{
+        display: flex;
+       }
+
+       #div-geral-home{
+        display: flex;
+        background-color: white;
+       }
+
+       #div-content{
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        flex-grow: 1; /* Faz com que o div-content cresça para ocupar todo o espaço disponível no seu contêiner pai */
+        margin-top: 50px;
+        height: 100vh; /* Altura que ocupa a tela inteira; ajuste conforme necessário */
+    }
+
+    #content-title{
+        filter: drop-shadow(4px 4px 2px rgb(3, 52, 0));
+    }
+
+    #user-content{
+        background-color: rgb(122, 122, 122);
+        padding: 40px;
+        border-radius: 8px;
+    }
+    
+    #titulo-user{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #buttons-log{
+        display: flex;
+        justify-content: center; 
+        gap: 20px;
+    }
+
+    #logoff{
+        color: white;
+        background-color: rgb(0, 138, 0);
+        border-radius: 8px;
+        border: none;
+        padding: 10px;
+        
+    }
+
+    #delete{
+        color: white;
+        background-color: rgb(206, 7, 7);
+        border-radius: 8px;
+        border: none;
+        padding: 10px;
+        
+    }
+
+    #logoff-button{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #search-result-div{
+        background-color: rgb(112, 112, 112);
+        border-radius: 20px;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        margin: auto;
+    }
+
+    .text-search-valor{
+        color: white;
+        font-size: 26px;
+        font-family: helvetica;
+        font-weight: bold;
+        text-shadow: 2px 2px green;
+        background-color: rgb(63, 63, 63);
+        border: none;
+        border-radius: 4px;
+        padding: 5px;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .text-search-name{
+        color: white;
+        font-size: 20px;
+        font-family: helvetica;
+        font-weight: bolder;
+        margin: auto;
+
+    }
+
+    #foto-search{
+        background-color: rgb(6, 68, 0);
+        padding: 4px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px rgb(26, 175, 6);
+    }
