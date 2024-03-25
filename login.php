@@ -58,6 +58,8 @@ include_once "cliente.class.php";
                 @$email = $_POST['email'];
                 @$senha = $_POST['senha'];
                 @$nome = $_POST['nome'];
+                $_SESSION["email-pre-confirmacao"] = $email;
+                $_SESSION["nome-pre-confirmacao"] = $nome;
                 @$MYSQL_CONNECT = new mysqli("localhost", "root", "", "bancoSD");
                 $tp = ["And", "or", "If","else"];
 
@@ -71,14 +73,20 @@ include_once "cliente.class.php";
                 if(preg_match('/[^a-zA-Z0-9]/', $senha)){
                     echo "<p style='font-family: Arial, Helvetica, sans-serif; color: Red;'>Atenção! A sua senha não pode possuir caracteres especiais.</p>";
                 }else{
-                    mysqli_query($MYSQL_CONNECT,"INSERT INTO Cliente(email,senha,nome_cliente) VALUES('$email','$senha','$nome')");
-                    $ultima_id = mysqli_insert_id($MYSQL_CONNECT);
-                    $SELECT_ALL = mysqli_query($MYSQL_CONNECT,"SELECT * FROM cliente WHERE id_cliente = $ultima_id");
-                    $ROWS = mysqli_fetch_assoc($SELECT_ALL);
-                    $_SESSION["nomecli"] = $ROWS["nome_cliente"];
-                    $_SESSION["emailcli"] = $ROWS["email"];
-                    $_SESSION["idcli"] = $ROWS["id_cliente"];
-                    header("Location: logged.php");
+                    $VETOR_NUMERO = array();
+                    for($i=0;$i<3;$i++){
+                        $VETOR_NUMERO[$i] = rand(0,9);
+                        $_SESSION['numero_senha1'] = $VETOR_NUMERO;
+                    }
+                    $_SESSION['numero_senha1'] = $VETOR_NUMERO [0];
+                    $_SESSION['numero_senha2'] = $VETOR_NUMERO [1];
+                    $_SESSION['numero_senha3'] = $VETOR_NUMERO [2];
+                    $_SESSION['numero_senha1'] =1;
+                    $_SESSION['numero_senha2'] = 2;
+                    $_SESSION['numero_senha3'] = 3;
+                    mail("$email","Confirmação De Cadastro","Para Confirmar o seu cadastro, insira no campo indicado o seguinte código: ".$VETOR_NUMERO[0]."".$VETOR_NUMERO[1]."".$VETOR_NUMERO[2],"From: webmaster@example.com" . "\r\n" .
+                    "CC: somebodyelse@example.com");
+                    header("location: confirme-cadastro.php");
                 }     
             }
             ?>
