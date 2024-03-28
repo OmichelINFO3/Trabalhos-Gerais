@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Básica</title>
+    <style>
+        
+
+        body{
+            margin: 0;
+            height: 100%;
+        }
+
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            background-image: url(queen-background.png);
+            background-size: 100% 100%;
+        }
+
+
+        #header-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            background-image: linear-gradient(to right, rgb(1, 1, 1),rgb(11, 11, 11),rgb(22, 22, 22),rgb(33, 33, 33));
+            padding: 10px;
+            padding-bottom:15px;
+            border-top: 3px solid rgb(75, 75, 75);
+        }
+        #header-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            flex-grow: 1;
+            padding-left: 20px;
+
+        }
+
+        .text-title{
+            font-family: helvetica;
+            color: white;
+            font-weight: bolder;
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+
+        #logo{
+            padding-right: 20px;
+        }
+
+        .link-btn{
+            border: none;
+            border-radius: 6px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-family: helvetica;
+            padding: 4px;
+            box-shadow: 0px 4px rgb(205, 205, 205);
+        }
+
+        .link-btn:hover{
+            transition: 1s; 
+            cursor: pointer;
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+
+        .link-btn:not(:hover){
+            transition: 1s; 
+            cursor: pointer;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+
+        .link-btn:active{
+            transition: 120ms; 
+            cursor: pointer;
+            transform: translateY(4px);
+            box-shadow: 0px 1px rgb(98, 98, 98);
+        }
+
+        #sobre-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            background-image: url(queen-content-background.png);
+        }
+        #conteudo-box{
+            display: flex;
+            background-image: linear-gradient(to right, rgb(57, 57, 57),rgb(0, 0, 0),rgb(0, 0, 0),rgb(59, 59, 59));
+            padding: 7px;
+            border-radius: 8px;
+        }
+
+        #elenco-text{
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: helvetica;
+        }
+        
+        #player-div{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(218, 218, 218);
+            padding: 20px;
+        }
+
+
+        #music-player{
+            border: 2px solid white;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to right, rgb(79, 79, 79), rgb(158, 158, 158));
+            padding: 20px;
+            gap: 20px;
+        }
+
+        #formulario-musica{
+            font-family: 'Roboto condensed';
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        #opcoes{
+            border: none;
+            border-radius: 4px;
+            font-family: 'Roboto Condensed';
+            background-color: rgb(173, 3, 3);
+            color: rgb(255, 255, 255);
+        }
+
+        #send{
+            border: none;
+            border-radius: 6px;
+            background-color: rgb(173, 3, 3);
+            color: rgb(255, 255, 255);
+            font-family: helvetica;
+            padding: 4px;
+            box-shadow: 0px 4px rgb(205, 205, 205);
+        }
+
+        #send:hover{
+            transition: 1s; 
+            cursor: pointer;
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+
+        #send:not(:hover){
+            transition: 1s; 
+            cursor: pointer;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+
+        #send:active{
+            transition: 120ms; 
+            cursor: pointer;
+            transform: translateY(4px);
+            box-shadow: 0px 1px rgb(98, 98, 98);
+        }
+
+        #botoes-musica{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 1px solid white;
+            background-color: rgb(194, 194, 194);
+            padding: 10px;
+            border-radius: 4px;
+            gap: 10px;
+        }
+        .botoes-musica-classe{
+            background-color: rgb(160, 41, 41);
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 2px 4px rgb(255, 255, 255);
+        }
+
+        .botoes-musica-classe:hover{
+            background-color: rgb(255, 255, 255);
+            transition: 500ms;
+            cursor: pointer;
+            transform: translateY(2px);
+            box-shadow: 2px 2px black;
+        }
+
+        .botoes-musica-classe:not(:hover){
+            transition: 500ms;
+            cursor: pointer;
+            box-shadow: 2px 4px black;
+        }
+        .imagem-musica-bt{
+            width: 21px;
+            height: 21px;
+            filter: drop-shadow(0px 0px 2px black);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header-logo">
+            <img id="logo" src="pngwing.com.png" width="128" height="128">
+        </div>
+    </header>
+    <div id="header-btn">
+        <button class="link-btn" id="sobre">Sobre</button>
+        <button class="link-btn" id="clipes">Clipes</button>
+        <button class="link-btn" id="elenco">Elenco</button>
+        <button class="link-btn" id="player">Player</button>
+    </div>
+    <div id="sobre-div">
+        <div id="conteudo-box">
+            <div>
+                <img src="queen-people.jpg" width="400" height="400">  
+            </div>
+            <div id="elenco-text">
+                <img src="text-about.png">
+             </div>
+        </div>
+    </div>
+    <div id="player-div">
+        <h1 id="titulo-div-player" style="font-family: 'Roboto Condensed'; color: rgb(0, 0, 0)">Player Musical</h1>
+            <div id="music-player">
+                <form id="formulario-musica">
+                    <label for="opcoes">Escolha um Hit</label>
+                    <select name="opcoes" id="opcoes">
+                        <option value="bh">Bohemian Rhapsody</option>
+                        <option value="iwt">I want To Break Free</option>
+                        <option value="wwr">We Will Rock You</option>
+                        <option value="dsm">Dont Stop Me Now</option>
+                    </select>
+                    <button type="submit" id="send">Tocar!</button>
+                </form>
+                <img id="musica-imagem" src="discografia/placeholder.jpg" width="128" height="128" style="border-radius: 50%; border: 1px white solid;">
+                <audio id="audio">
+                    <source src="musicas/BH.mp3" type="audio/mp3">
+                </audio>
+                <input type="range" min="0" value="0" id="slider">
+                <div id="botoes-musica">
+                    <button class="botoes-musica-classe" id="tocar"><img src="img-btn-musica/play.png" class="imagem-musica-bt"></button>
+                    <button class="botoes-musica-classe" id="pause"><img src="img-btn-musica/pause.png" class="imagem-musica-bt"></button>
+                    <button class="botoes-musica-classe" id="volume-up"><img src="img-btn-musica/volume-up.png" class="imagem-musica-bt"></button>
+                    <button class="botoes-musica-classe" id="volume-down"><img src="img-btn-musica/volume-dw.png" class="imagem-musica-bt"></button>
+                    <button class="botoes-musica-classe" id="mute"><img src="img-btn-musica/mute.png" class="imagem-musica-bt"></button>
+                </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        audio = document.getElementById('audio');
+        $("#player").click(function(){
+            $("#sobre-div").slideUp(1500);
+            $("#player-div").slideDown(1500);
+        });
+
+        $("#sobre").click(function(){
+            $("#sobre-div").slideDown(1500);
+            $("#player-div").slideUp(1500);
+        });
+
+        $("#formulario-musica").submit(function(){
+            event.preventDefault();
+            opcao = document.getElementById('opcoes').value;
+            switch(opcao){
+
+            case 'bh':
+            audio.src = "musicas/BH.mp3";
+            document.getElementById('musica-imagem').src = "discografia/bohemian.jpg";
+            $('#player-div').css("background-color","#843084");
+            $('#titulo-div-player').css("color","white");
+            $('#music-player').css("background-image","linear-gradient(to right, #843084, #EA14EA)");
+            $('.botoes-musica-classe').css("background-color","#87156A");
+            $('#opcoes').css("background-color","#87156A");
+            $('#send').css("background-color","#87156A");
+            break;
+
+            case 'iwt':
+            audio.src = "musicas/iwt.mp3";
+            document.getElementById('musica-imagem').src = "discografia/classic.jpg";
+            $('#player-div').css("background-color","#252F53");
+            $('#titulo-div-player').css("color","#9A9236");
+            $('#music-player').css("background-image","linear-gradient(to right, #252F53, #2D3C72)");
+            $('.botoes-musica-classe').css("background-color","#9A9236");
+            $('#opcoes').css("background-color","#9A9236");
+            $('#send').css("background-color","#9A9236");
+            break;
+
+            case 'wwr':
+            audio.src = "musicas/wwry.mp3";
+            document.getElementById('musica-imagem').src = "discografia/wwry.jpg";
+            $('#player-div').css("background-color","#8CAF8B");
+            $('#titulo-div-player').css("color","#E25F57");
+            $('#music-player').css("background-image","linear-gradient(to right, #8CAF8B, #8CCC8B)");
+            $('.botoes-musica-classe').css("background-color","#ED3C31");
+            $('#opcoes').css("background-color","#ED3C31");
+            $('#send').css("background-color","#ED3C31");
+            break;
+
+            case 'dsm':
+            audio.src = "musicas/dsmn.mp3";
+            document.getElementById('musica-imagem').src = "discografia/dsmn.jpg";
+            $('#player-div').css("background-color","#B2AA4F");
+            $('#titulo-div-player').css("color","black");
+            $('#music-player').css("background-image","linear-gradient(to right, #B2A342, #DAC228)");
+            $('.botoes-musica-classe').css("background-color","#5F5F5F");
+            $('#opcoes').css("background-color","#5F5F5F");
+            $('#send').css("background-color","#5F5F5F");
+            break;
+
+            }
+        });
+
+        $("#tocar").click(function(){
+            audio.play();
+        });
+
+        $("#pause").click(function(){
+            audio.pause();
+        });
+
+        $("#volume-up").click(function(){
+            audio.volume =  audio.volume + 0.1;
+        });
+
+        $("#volume-down").click(function(){
+            audio.volume =  audio.volume - 0.1;
+        });
+
+        $("#mute").click(function(){
+            audio.volume = 0.0;
+        });
+
+        $("#slider").click(function(){
+            audio.currentTime = document.getElementById('slider').value;
+            document.getElementById('slider').max = audio.duration;
+        });
+    });
+    </script>    
+</html>
